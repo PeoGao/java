@@ -2,14 +2,14 @@ import javax.swing.JOptionPane;
 
 public class DibukaLibrary{
   
-  public static void main(String [] ars){
+  public static void main(String [] args){
     
     String FirstName, Surname;
     int age, NumberOfBooksBorrowed=0, NumberOfApplicants=20;
     double JoiningFee=500, TotalAmountToPay=0.0, ReadingFee=0.0, AmountOfBooks=0.0, MonthlySubscription=10;
     
     ReadingFee= NumberOfBooksBorrowed*10;
-    AmountOfBooks= NumberOfBooksBorrowed*100;
+    AmountOfBooks= NumberOfBooksBorrowed*100; //why 100?
     TotalAmountToPay= JoiningFee + MonthlySubscription + AmountOfBooks + ReadingFee;
     
     
@@ -17,16 +17,16 @@ public class DibukaLibrary{
     
     Surname= JOptionPane.showInputDialog("Please enter your Surname");
     
-    JOptionPane.showInputDialog( null, Surname +", " + " " + FirstName);
+    JOptionPane.showInputDialog( null, Surname +", " + " " + FirstName); // no assignment, gape this should be a message dialog
   
     NumberOfBooksBorrowed= JOptionPane.showInputDialog("please enter the NumberOfBooksBorrowed");
     
-    JOptionpane.showInputDialog( null, Surname +", " +" " + FirstName", TotalAmountToPay: + TotalAmountToPay);
+    JOptionpane.showInputDialog( null, Surname +", " +" " + FirstName", TotalAmountToPay: + TotalAmountToPay);  //calculation
                                   
     
         if((Age>65) || (Age<18))
               {                        
-         ((JoiningFee + MonthlySubscription + ReadingFee)0.25)
+         ((JoiningFee + MonthlySubscription + ReadingFee)0.25) // no assignment
     }
   }
 }
