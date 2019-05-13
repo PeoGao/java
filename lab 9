@@ -1,0 +1,57 @@
+/** The Department of Computer Science stores student details using arrays. There are fourdifferent arrays:
+the first array contains the surname of the students, the second array contains the first name, the third
+and fourth arrays contain the CA and exammarks as percentages respectively.
+You are tasked with developing a program that calculates and displays the final marks of students. The
+program reads the surname then the first name of a student. The program then reads the CA and the
+exam mark, then it calculates the final mark for the student as a percentage using the CA and the exam
+mark. The CA is 40% of the final mark, whilstthe exam is 60% of the final mark. For each student, the
+program should then output the first name, surname, final mark (to 2 decimal places) and a grade. Ifthe
+final mark is over 79%, the grade is an A, a final mark from 70 to 79 is a B, 60 to 69 is a C, 50 to 59 is a D,
+40 to 49 is an E, and anything below 40 is an F. Assume that there are 40 students in a class.
+ **/
+
+
+import java.util.scanner;
+public class finalMark {
+public static void main(String args[]) {
+Scanner sc = new Scanner(System.in);
+
+String surname,firstName;
+int ca,examMark;
+double finalMark=0.0;
+int totalNumberOfStudent=40;
+
+String[] surname = new String [40];
+String[] firstName = new string[40];
+int[] ca = new int[40];
+int[] examMark =new int[40];
+
+System.out.println("Enter surname");
+surname = sc.next();
+System.out.println("Enter firstname");
+firstName = sc.next();
+
+ 
+ for(int ca=1; ca<=40;ca++); 
+ 
+ for(int examMark= 1;examMark<=60; examMark++)
+ 
+ finalMark = examMark + ca);
+ system.out.print("finalMark");
+String output= "surname\tfirstname\tfinalmark\tgrade;
+
+ 
+}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
