@@ -10,7 +10,7 @@ final mark is over 79%, the grade is an A, a final mark from 70 to 79 is a B, 60
 40 to 49 is an E, and anything below 40 is an F. Assume that there are 40 students in a class.
  **/
 
-
+// adjust the indentation
 import java.util.scanner;
 public class finalMark {
 public static void main(String args[]) {
@@ -21,7 +21,7 @@ int ca,examMark;
 double finalMark=0.0;
 int totalNumberOfStudent=40;
 
-String[] surname = new String [40];
+String[] surname = new String [40];  // you dont need lines 19-21 (24-27 are enough)
 String[] firstName = new string[40];
 int[] ca = new int[40];
 int[] examMark =new int[40];
@@ -31,14 +31,14 @@ surname = sc.next();
 System.out.println("Enter firstname");
 firstName = sc.next();
 
- 
+ // but line 35 e evaluata ca e e tsaya kae?
  for(int ca=1; ca<=40;ca++); 
  
- for(int examMark= 1;examMark<=60; examMark++)
+ for(int examMark= 1;examMark<=60; examMark++) //you should show which indices or something
  
- finalMark = examMark + ca);
+ finalMark = examMark + ca;
  system.out.print("finalMark");
-String output= "surname\tfirstname\tfinalmark\tgrade;
+String output= surname+"\t"+firstname+"\t"+finalmark+"\t"+grade;
 
  
 }
