@@ -1,0 +1,34 @@
+//	Declare a two dimensional array of type int to hold six rows and four columns .
+  Fill the two dimensional array with the following values in a row-wise fashion: 6, 3, 4, 9, 5, 2, 3, 8, 4, 1, 2, 7, 3, 9, 1, 6, 2, 8, 9, 5, 1, 7, 8, 4
+Declare an arraylist aL of type int that can be used to hold all the elements in the above 2D  array 	Write a method or series of Java code that will copy and insert elements from the array you have just declared and populated into the arraylist aL. this should be done in a row-wise fashion from the 2D array 
+	Print all the elements in the arraylist
+	Write a series of  code/program/method to print all the elements in the arraylist aL  above. 
+	Write a series of code/program/method to print all-same-elements. If you use a method, make use of the following signature 
+ 
+public static void printAllSameElements(ArrayList<Integer> l, int b)
+ {
+ //prints all elements of value b in arraylist l. 
+ 
+ }
+e.g. printAllSameElements(aL, 1) will print 1 1 1
+
+	Using the method in 7 above, print all elements in the arraylist in non-decreasing order.// 
+
+
+my code
+
+class dimension { 
+    public static void main(String[] args) 
+    { 
+        int[][] aL = { {6,3,4,9,5,2 },{3,8,4,1,2,7},{3,9,1,6,2,8},{9,5,1,7,8,4} }; 
+  
+        for (int i = 0; i < 6; i++) { 
+            for (int j = 0; j < 6; j++) { 
+                System.out.print(aL[i][j] + " "); 
+            } 
+  
+            System.out.println();
+             
+        } 
+    } 
+} 
