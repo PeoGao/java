@@ -1,0 +1,130 @@
+// Laboratory Assignment no. 3
+A		6	7	9	13	10	8	9
+								
+B		Amy	Barth	Candy	Dan	Eva	Faith	Guy
+Parallel arrays are two or more arrays having the same dimensions and that may be used to contain different types/values e.g.
+
+For example, the two arrays indicated here are parallel arrays. The could be declared as follows: 
+
+int[] ages =  {6, 7, 9, 13, 10, 8, 9};
+String [] names = {“Amy”, “barth”, “Candy”, “Dan”, “Eva”, “Faith”, “Guy’}; 
+
+The arrays  A and B above are considered to be parallel arrays. Our job is to create a class based on this parallel arrays. The class will contain 2 local or instance variables. Each of this variables will bear the same corresponding type as in the parallel arrays above. In this example values at each index will correspond to the local variables of each instance/object to be created. 
+
+ A skeletal public interface to such a class would look like the following : 
+
+public class MimicParallelArray
+{
+	(1)_________________//declare a local variable to hold  
+      //the corresponding age from the parallel array
+     (2)____________________//declare a local variable to 
+      //hold the corresponding name from the parallel array
+
+     //A constructor is a method having the same name as 
+     //the class name and the sole aim of a constructor 
+     //is to initialize the instance variables
+
+ public  MimicParallelArray()
+ { //default constructor 
+  (3)//initializes the instance varaibles to their default values 
+ }
+public  MimicParallelArray(int a, String s)
+ { //default constructor 
+ (4) //initializes the instance varaibles to 
+ // to the values supplied by the parameters 
+ }
+//===provide the get and set methods here 
+public String getName()
+{
+ (5)  // ==provide the code 
+}
+public int getAge()
+{
+ (6)  // ==provide the code 
+}
+public void setAge(int a)
+{
+ (7) //provide the code that sets a new age for this object
+}
+public void setName(String a)
+{
+  (8)//provide the code that sets a new name for this object
+}
+}//end class 
+//testing the class your wrote 
+
+public static void main(String [] args)
+{
+ //(17)  finally create an array of 7 objects from the // // class MimicParallelArray and fill each object with the // values from the parallel array
+  //9)create /instantiate 2 different objects from the //class you created above
+ //(10) Using a print statement, print the age and name of  //each  object 
+//(11) let one pobject points to the other object
+//(12) Now print both object’s names and ages 
+//(13) what went wrong ? Explain what has happened  .
+//(14) How do you correct – or correct the above error, if //any; now print the two objects. What do you see now?
+//(15) create a third object and assign the following values to name and age respectively : “Johnson”, 43.
+//(16) print the contents of this last object 
+} //end of main 
+//
+
+PROGRAM
+
+public class MimicParallelArray
+{
+   int ages;
+   String names;
+    
+   public MimicParallelArray()
+   {
+      int ages = 0;
+      String names = " ";
+   }
+    
+   public MimicParallelArray(int a, String s) {
+      ages = a;
+      names = s;
+   }
+    
+   public void setAge(int a){
+      ages = a;
+   }
+    
+   public void setName(String s){
+      names = s;
+   }
+    
+   public int getAge(){
+      return ages;
+   }
+    
+   public String getName(){
+      return names;
+   }
+    
+   public static void main(String [] args) {
+    
+      MimicParallelArray[] arr=new MimicParallelArray[7];
+     
+      arr[0]=new MimicParallelArray(6, "Amy");
+      arr[1]=new MimicParallelArray(7,"Barth");
+      arr[2]=new MimicParallelArray(9,"Candy");
+      arr[3]=new MimicParallelArray(13,"Dan");
+      arr[4]=new MimicParallelArray(10,"Eva");
+      arr[5]=new MimicParallelArray(8,"Faith");
+      arr[6]=new MimicParallelArray(9,"Guy");
+    
+      MimicParallelArray ar1=new MimicParallelArray(9,"mary");
+      MimicParallelArray ar2=new MimicParallelArray(6,"john");
+   
+      System.out.println("Name is " + ar1.getName()+ " " + "Age is " + ar1.getAge());
+      System.out.println("Name is " + ar2.getName() + " " + "Age is " + ar2.getAge());
+      System.out.println("Name is " + ar1.getName()+ " " + "Age is " + ar1.getAge());
+      System.out.println("Name is " + ar2.getName() + " " + "Age is " + ar2.getAge());
+   
+      MimicParallelArray ar3=new MimicParallelArray(43,"Johnson");
+      System.out.println("Name is " + ar3.getName() + " " + "Age is " + ar3.getAge());
+   
+   }
+}
+
+
